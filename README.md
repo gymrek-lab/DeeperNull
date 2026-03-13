@@ -144,3 +144,20 @@ Some workflows install this library before running a script. To avoid having pac
 - tqdm
 - xgboost
 
+### Tested versions
+
+The following configuration was tested and confirmed to work:
+
+- Python 3.10.20
+- matplotlib 3.10.8
+- numpy 2.2.6
+- pandas 2.3.3
+- pytorch-lightning 2.6.1
+- scikit-learn 1.7.2
+- scipy 1.15.2
+- seaborn 0.13.2
+- shapiq 1.4.1
+- pytorch 2.10.0
+- torchmetrics 1.8.2
+- tqdm 4.67.3
+- xgboost 3.2.0
