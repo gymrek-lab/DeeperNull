@@ -25,7 +25,7 @@ The `deeper_null/fit_model.py` script is used to train DeepNull style models on 
 - `--pheno_file` / `-p`: Path to phenotype file(s)
 - `--model_config` / `-m`: Path to model configuration JSON file
 - `--out_dir` / `-o`: Path to output directory (default: current directory)
-- `--save_models`: Save models to output directory (currently XGBoost only)
+- `--save_models`: Save models to output directory
 - `--sample_id_col` / `-s`: Column name for sample IDs (default: 'IID')
 - `--n_folds` / `-n`: Number of cross-validation folds (default: 5)
 - `--train_samples`: File containing training sample IDs
