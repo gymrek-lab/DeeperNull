@@ -4,6 +4,28 @@ Library and workflows for integrating spatiotemporal covariates (e.g. time of da
 
 [Preprint](https://www.medrxiv.org/content/10.1101/2025.11.26.25341090)
 
+## Table of Contents
+* [Installation](#installation)
+* [Training Models with fit_model.py](#training-models-with-fit_modelpy)
+* [Getting Shapley Values with get_shapley_values.py](#getting-shapley-values-with-get_shapley_valuespy)
+* [UK Biobank RAP Workflows](#uk-biobank-rap-workflows-ukb_rap_workflows)
+* [Dependencies](#dependencies)
+
+## Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/gymrek-lab/DeeperNull.git
+cd DeeperNull
+```
+
+Install the required dependencies:
+```bash
+pip install matplotlib numpy pandas pytorch-lightning scikit-learn scipy seaborn shapiq "torch>=2.0" torchmetrics tqdm xgboost
+```
+
+> See [Dependencies](#dependencies) for tested version details and workflow-specific Dockerfiles for their full dependency lists.
+
 ## Training Models with fit_model.py
 
 The `deeper_null/fit_model.py` script is used to train DeepNull style models on data. It supports various model types:
