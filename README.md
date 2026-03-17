@@ -24,6 +24,11 @@ Install the required dependencies:
 pip install matplotlib numpy pandas pytorch-lightning scikit-learn scipy seaborn shapiq "torch>=2.0" torchmetrics tqdm xgboost
 ```
 
+Install the library:
+```bash
+pip install .
+```
+
 > See [Dependencies](#dependencies) for tested version details and workflow-specific Dockerfiles for their full dependency lists.
 
 ## Training Models with fit_model.py
@@ -34,7 +39,7 @@ The `deeper_null/fit_model.py` script is used to train DeepNull style models on 
 - XGBoost models  
 - PyTorch neural network models
 
-data/create_dev_data.py can be used to simulate data to test this functionality.
+data/create_dev_data.py can be used to simulate data to test this functionality. Example scripts for training the different models types are available at tests/test_training_lin.sh, tests/test_training_xgb.sh, and tests/test_training_nn.sh. The linear and XGBoost versions should take a few seconds to run, while the neural network will take a few minutes.
 
 ### Requirements
 
@@ -80,6 +85,8 @@ python fit_model.py \
 ## Getting Shapley Values with get_shapley_values.py
 
 The `deeper_null/get_shapley_values.py` script computes Shapley values and first-order Shapley Interaction Index (SII) values for trained models. Shapley values are local explanations calculated for each individual, helping identify important covariate effects and interactions.
+
+This functionality can be tested by first running data/create_dev_data.py to create data and then tests/test_training_xgb.sh to train a model to interpret. Then run tests/test_shap.sh, which should take under a minute to run.
 
 ### Command Line Arguments
 
