@@ -34,6 +34,8 @@ The `deeper_null/fit_model.py` script is used to train DeepNull style models on 
 - XGBoost models  
 - PyTorch neural network models
 
+data/create_dev_data.py can be used to simulate data to test this functionality.
+
 ### Requirements
 
 1. A whitespace delimited covariate file with a header row (used as model input)
