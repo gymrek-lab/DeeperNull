@@ -5,6 +5,7 @@
 **/docker/*.R
 
 tests/*
+!tests/*.sh
 
 build/
 
